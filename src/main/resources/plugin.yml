@@ -1,0 +1,20 @@
+name: FalixUltimate
+version: 1.0.0
+main: de.falixultimate.FalixUltimate
+api-version: '1.21'
+description: XCraftUltimate-Abos mit Laufzeit, Rechten und Ablauf
+
+commands:
+  ultimate:
+    description: Ultimate-Status anzeigen oder verwalten
+    usage: /ultimate [info | grant | remove | list | reload]
+    aliases: [ult]
+    permission: falixultimate.use
+
+permissions:
+  falixultimate.use:
+    description: Darf den eigenen Ultimate-Status anzeigen
+    default: true
+  falixultimate.admin:
+    description: Darf Ultimate-Abos vergeben und entfernen
+    default: op
