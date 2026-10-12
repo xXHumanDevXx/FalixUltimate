@@ -1,0 +1,36 @@
+# =====================================================================
+#  FalixUltimate - XCraftUltimate-Abos
+#  Abos werden von einem Admin vergeben: /ultimate grant <Spieler> <Tage>
+#  Die Zahlung läuft außerhalb des Servers. Dieses Plugin nimmt kein Geld.
+#  Nach Änderungen an den Perks: /ultimate reload und Spieler neu joinen lassen.
+# =====================================================================
+
+perks:
+  name: "XCraftUltimate"
+  price: "50 Cent / 2 Wochen"
+  # Rechte, die ein aktiver Ultimate-Spieler bekommt.
+  # falixteleport.homes.6 = 6 Homes (FalixTeleport)
+  # falixstats.tab.ultimate = Ultimate-Rang im Tab-Menü (FalixStats)
+  permissions:
+    - "falixteleport.homes.6"
+    - "falixstats.tab.ultimate"
+
+messages:
+  prefix: "&8[&6Ultimate&8] &7"
+  usage: "{prefix}&cBenutzung: &f{usage}"
+  no-permission: "{prefix}&cDazu hast du keine Berechtigung."
+  player-not-found: "{prefix}&cSpieler &f{player} &cwurde nicht gefunden."
+  invalid-days: "{prefix}&cDie Tage müssen eine Zahl über 0 sein."
+  reloaded: "{prefix}&aKonfiguration neu geladen."
+  status-active: "{prefix}&aDu hast &6{name} &aaktiv bis &f{until}&a."
+  status-inactive: "{prefix}&7Du hast kein &6{name}&7. Preis: &f{price}&7."
+  granted: "{prefix}&a{name} für &f{player} &aum &f{days} Tage &averlängert. Aktiv bis &f{until}&a."
+  granted-you: "{prefix}&aDein &6{name} &awurde um &f{days} Tage &averlängert. Aktiv bis &f{until}&a."
+  revoked: "{prefix}&e{player} hat kein Ultimate mehr."
+  not-active: "{prefix}&c{player} hat kein aktives Ultimate."
+  expired: "{prefix}&7Dein &6Ultimate &7ist abgelaufen. Danke für deine Unterstützung!"
+  info-active: "{prefix}&f{player} &ahat Ultimate bis &f{until}&a."
+  info-inactive: "{prefix}&f{player} &chat kein aktives Ultimate."
+  list-header: "{prefix}&6Aktive Ultimate-Spieler &8(&f{count}&8)&6:"
+  list-entry: "&8 - &7{player} &8(&f{until}&8)"
+  list-none: "{prefix}&7Es gibt keine aktiven Ultimate-Spieler."
